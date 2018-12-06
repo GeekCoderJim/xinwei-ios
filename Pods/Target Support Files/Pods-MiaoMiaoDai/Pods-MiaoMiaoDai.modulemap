@@ -1,0 +1,6 @@
+framework module Pods_MiaoMiaoDai {
+  umbrella header "Pods-MiaoMiaoDai-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,15 @@
+//
+//  UITabBar+badge.h
+//  SuXunTong
+//
+//  Created by 尤鸿斌 on 2017/8/31.
+//  Copyright © 2017年 scan. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface UITabBar (badge)
+- (void)showBadgeOnItmIndex:(int)index;
+- (void)hideBadgeOnItemIndex:(int)index;
+
+@end

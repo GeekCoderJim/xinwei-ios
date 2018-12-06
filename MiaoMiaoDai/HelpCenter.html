@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>帮助中心</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			font-family: SimHei;
+			font-size: 16px;
+		}
+
+		p{
+			padding: 0;
+			margin: 0;
+			text-align: left;
+			font-size: 16px;
+		}
+
+		.fol-title{
+			font-size:18px;
+			padding: 8px 10px;
+			color:#000;
+			background-color: #fff;
+			border-bottom: 1px solid #f1f1f1;
+		}
+		.fol-title:active{
+			background-color: #EDEDED;
+		}
+		.fol-msg{
+			display: block;
+			padding: 5px 10px;
+			background-color: #f1f1f1;
+		}
+		.hide{
+			display: none;
+		}
+
+
+
+    </style>
+    <script type="text/javascript">
+
+/* 隐藏或显示 */
+function showhide(eid){
+    var ele = document.getElementById(eid);
+    var c = ele.className;
+    if(c != null && c.indexOf('hide') > -1)
+    {
+         ele.className = c.replace('hide', '');
+    }else{
+        ele.className = "hide";
+        ele.className = c + ' hide';
+    }
+}
+
+
+    </script>
+</head>
+<body>
+<div>
+    <p class="fol-title" id="t0" onclick="showhide('c0');">如何申请借款？</p>
+    <p class="fol-msg hide" id="c0">
+        申请借款前，请先完成个人信息填写、身份认证以及银行卡信息填写，即可在“借款”里面按照提示进行借款申请。提交申请后，请完成手机认证，认证通过后无须再次认证。</p>
+</div>
+<div>
+    <p class="fol-title" id="t1" onclick="showhide('c1');">借款额度和期限是多少？</p>
+    <p class="fol-msg hide" id="c1">
+        目前秒秒贷的借款额度分为两种：500元/1000元，期限：10天，但可以申请延期还款，后续我们会开放更多的额度和期限申请。现金将在审核通过后放款至您的银行卡。您需要在每笔借款到期日按时还款，以维护和提升您的信用水平。</p>
+</div>
+<div>
+    <p class="fol-title" id="t2" onclick="showhide('c2');">怎样还款？是否可以提前还款？</p>
+    <p class="fol-msg hide" id="c2">
+        我们会在还款日到来时给您发送短信提醒您还款，需要您在扣款日当天或之前登录app进行还款操作。可以提前还款，但利息费不予减免，还款金额不变，如操作失败请与微信/电话客服联系。</p>
+</div>
+<div>
+    <p class="fol-title" id="t3" onclick="showhide('c3');">逾期未还款怎么办？</p>
+    <p class="fol-msg hide" id="c3">
+        如果您有借款逾期未还，我们将会收取滞纳金，在原规定还款日后第1天起，每天收取15元滞纳金，同时将降低您的信用评分，如果长时间未还款，我们将会有专人联系您并通过法律途径解决，为了您的个人信用水平，请及时还款。</p>
+</div>
+<div>
+    <p class="fol-title" id="t4" onclick="showhide('c4');">还款日是如何计算的？</p>
+    <p class="fol-msg hide" id="c4">
+        还款日是按照借款的实际发放日期，顺延相应天数（按照您实际选择的借款期限）。请点击菜单里的“我的”->“借款记录”，即可查看详细的借款信息。</p>
+</div>
+<div>
+    <p class="fol-title" id="t6" onclick="showhide('c6');">为何我的借款数与实际到账数不一样？</p>
+    <p class="fol-msg hide" id="c6">为了提高风险控制能力，实际到账数会先减掉服务费和利息，即：<br><b>实际到账=申请借款金额-服务费-利息</b>
+    </p>
+</div>
+<div>
+    <p class="fol-title" id="t5" onclick="showhide('c5');">如何延期还款？</p>
+    <p class="fol-msg hide" id="c5">
+        如果您的此次借款记录未延期过且未逾期，则需要支付相应的延期费才可申请延期还款，每条借款记录只能延期一次，延期期限为10天。</p>
+</div>
+<div>
+    <p class="fol-title" id="t9" onclick="showhide('c9');">延期还款费用怎么计算？</p>
+    <p class="fol-msg hide" id="c9">延期还款需要增加服务费、利息，利息按照每天累加，如果提前还款，则不需要计算后续的利息费,但服务费无法减免。</p>
+</div>
+<div>
+    <p class="fol-title" id="t7" onclick="showhide('c7');">能否修改我的身份证号码信息？</p>
+    <p class="fol-msg hide" id="c7">抱歉，为了更加方便对您的信息进行审核，个人信息中的姓名和身份证号码一经提交就不能修改。</p>
+</div>
+<div>
+    <p class="fol-title" id="t8" onclick="showhide('c8');">我想更换手机号怎么办？</p>
+    <p class="fol-msg hide" id="c8">
+        在您更换手机号之前，请先把原来手机号绑定的账号中所有欠款还清，然后联系客服申请解绑手机号，解绑成功后，利用新手机号重新注册即可使用。</p>
+</div>
+</body>
+</html>
